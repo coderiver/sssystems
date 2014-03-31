@@ -1,2 +1,710 @@
-// Normally mainpage styles
- 
+// main_page
+
+// services
+.services
+	position: relative
+	width: 100%
+	height: 485px
+	// background: url("../img/house.png") no-repeat 0 0
+	.services__pic
+		position: absolute
+		top: -80px
+		left: -120px
+
+.services_mod
+	position: absolute
+	top: 0
+	display: none	
+
+.services__in
+	position: absolute
+	right: -27px
+	top: 0
+	margin-left: 5px
+	width: 27px
+	height: 27px
+	color: #fff
+	text-decoration: none
+	text-align: center 
+	display: none
+	background: #231F20 
+	+transition(0.5s)
+	
+.services__item
+	position: absolute
+	padding: 0 7px
+	height: 27px
+	line-height: 24px
+	display: inline-block
+	cursor: default
+	background: rgba(#fff, 0.7)
+	+transition(0.3s)
+	+box
+	&:hover
+		color: #000 
+		background: #FC0 
+		+transition(0.3s)
+		.services__in
+			display: inline-block
+		&:before
+			background: #FC0
+
+	&:before
+		position: absolute
+		content: ''
+		bottom: -19px
+		left: -5px
+		width: 1px
+		height: 20px
+		background: rgba(#fff, 0.7)
+		+rotate(30, deg)
+		
+.services__item_1
+	top: 56px
+	left: 316px
+	
+.services__item_2
+	top: 56px
+	right: 235px
+	
+.services__item_3
+	top: 160px
+	left: 118px
+	
+.services__item_4
+	top: 160px
+	right: 170px
+	
+.services__item_5
+	top: 227px
+	left: 470px
+	&:before
+		top: -18px
+		left: -5px
+		+rotate(-30, deg)
+		
+.services__item_6
+	left: 290px
+	bottom: 148px
+	
+.services__item_7
+	left: 693px
+	bottom: 147px
+	
+.services__item_8
+	left: 123px
+	bottom: 55px
+	
+.services__item_9
+	left: 419px
+	bottom: 56px
+
+.services__item_1, .services__item_6
+	&:before
+		left: 102.5%
+		+rotate(-30, deg)
+	
+.services__item_3, .services__item_2, .services__item_4
+	&:before
+		top: -18px
+		left: 102.5%
+		+rotate(-150, deg)
+
+.services__oll
+	padding: 20px 0 20px 25px !important
+	width: 251px
+	color: #fff 
+	font-size: 16px !important
+	text-transform: uppercase
+	text-decoration: none
+	font-family: 'Roboto Condensed', sans-serif !important
+	background: #231F20 
+	+transition(0.2s)
+	+box
+	&:hover
+		color: #FC0 
+		background: #323232 
+		+transition(0.2s)
+		&:before
+			display: none
+		&:after
+			display: block
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		right: 26px
+		margin-top: -9.5px
+		+s(pic-oll)
+	&:after
+		position: absolute
+		content: ''
+		top: 50%
+		right: 26px
+		margin-top: -10px
+		display: none
+		+s(pic-oll1)
+
+.services__oll_mod
+	position: absolute
+	right: 0
+	bottom: 0
+	
+.services__oll_little
+	float: right
+	padding: 5px 18px 5px 20px !important
+	width: 156px
+	color: #231F20 
+	font-size: 13px !important
+	background: #FC0
+	+transition(0.2s) 
+	i
+		font-size: 16px
+		font-style: normal
+	&:hover
+		color: #FC0
+		background: #323232 
+		+transition(0.2s)
+		&:after
+			display: none
+	&:before
+		display: none
+	
+// preview
+.preview
+	width: 100%
+	height: 222px
+	background: #FC0 
+.preview__field
+	font-size: 0
+	background: url('../img/bg-preview.png') no-repeat -61.5px 0
+
+.preview__item
+	width: 25%
+	height: 222px
+	color: #231F20
+	text-align: center
+	text-decoration: none
+	vertical-align: top
+	display: inline-block
+	+transition(0.2s)
+	+box
+	.h3 
+		text-transform: uppercase
+		line-height: 1.2
+	// &:hover
+	// 	color: #FC0 
+	// 	background: #323232 
+	// 	+transition(0.2s)
+	// 	.preview__pic_2
+	// 		i
+	// 			margin-left: -30px
+	// 			+s(preview2-2)
+
+.preview__pic
+	position: relative
+	margin-bottom: 5px
+	height: 107px
+	text-align: center
+	vertical-align: bottom
+	i
+		position: absolute
+		bottom: 0
+		left: 50%
+		display: block
+
+.preview__pic_1
+	i
+		margin-left: -35.5px
+		+s(preview1)
+
+.preview__pic_2
+	i
+		margin-left: -30px
+		+s(preview2)
+
+.preview__pic_3
+	i
+		margin-left: -15px
+		+s(preview3)
+
+.preview__pic_4
+	i
+		margin-left: -26px
+		+s(preview4)
+
+// container
+.l
+	color: #fff 
+	
+.l-col1
+	p, a
+		padding-bottom: 12px
+		font-family: "Roboto", sans-serif
+		font-size: 13px
+	a, .h1
+		color: #FECB00 
+	a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+
+	.h1
+		margin-bottom: 35px
+		
+	.h4
+		padding: 12px 0
+	.services__oll
+		position: relative
+		margin-top: 55px
+		color: #231F20 
+		text-decoration: none !important
+		background: #FC0 
+		display: inline-block
+		+transition(0.2s)
+		&:hover
+			color: #FC0 
+			background: #323232 
+			+transition(0.2s)
+		&:before
+			right: 17px
+			top: 50%
+			margin-top: -5px
+			+s(pic-oll2)
+		&:after
+			right: 17px
+			top: 50%
+			margin-top: -5px
+			+s(pic-oll2-2)
+
+.download
+	margin-bottom: 20px
+	padding: 47px 20px 25px
+	width: 233px
+	text-align: center
+	border: 1px dashed #c2c2c2 
+	+border-radius(20px)
+	+transition(0.2s)
+	+box
+	&:hover
+		border-color: #FECB00  
+		background: #323232 
+		+transition(0.2s)
+		
+.download__block
+	margin-bottom: 30px
+	text-decoration: none
+	color: #FC0 
+	display: inline-block
+			
+.download__pic
+	margin: 0 auto 17px
+	+s(download-pic)
+
+.discount
+	padding: 20px 0 15px
+	text-align: center
+	text-decoration: none
+	color: #231F20 
+	background: #FFCC01 
+	display: block
+	+border-radius(20px)
+	+transition(0.2s)
+	h3
+		font-size: 60px
+		font-weight: normal
+		font-family: "Roboto", sans-serif
+	&:hover
+		color: #FC0 
+		background: #323232 
+		+transition(0.2s)
+
+// slider
+.slider
+	border-top: 1px dashed #b7b7b7 
+	.cycle-slideshow
+		position: relative !important
+		margin: 0 auto
+		overflow: visible !important
+		.cycle__item
+			position: relative
+			width: 250px
+			background: #000
+			img
+				opacity: 0.7
+				display: block
+				+transition(0.2s)
+
+			&:hover
+				img
+					opacity: 1
+					+transition(0.2s)
+				.cycle__block
+					display: block
+					+transition(0.8s)
+		&:before
+			position: absolute
+			content: ''
+			height: 100%
+			width: 1000%
+			top: 0
+			left: -1000%
+			z-index: 1000
+			opacity: 0.5
+			background: #000
+		&:after
+			position: absolute
+			content: ''
+			height: 100%
+			width: 1000%
+			top: 0
+			right: -1000%
+			z-index: 1000
+			opacity: 0.5
+			background: #000
+		.cycle__nav
+			position: absolute
+			top: 50%
+			margin-top: -50.5px
+			height: 30px
+			width: 30px
+			z-index: 2000
+			background: #ccc
+			+s(next-pic)
+			&:hover
+				+s(next-pichov)
+		.cycle__nav_prev
+			left: -89px
+			+rotate(180, deg)
+		.cycle__nav_next
+			right: -89px
+
+
+	.cycle__block
+		position: absolute
+		bottom: 5px
+		padding: 8px 14px 14px
+		width: 250px
+		height: 74px
+		color: #231f20
+		border-bottom: 2px solid #FC0 
+		display: none
+		background: #fff
+		+transition(0.8s)
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: -6px
+			left: 22px
+			z-index: 100
+			+arr(20, 18, #fff, t) 
+		p
+			font-size: 13px
+			line-height: 1.2 
+
+.slider__top
+	padding: 22px 0 22px 15px
+	.h1
+		color: #FFF 
+		display: inline-block
+	.services__oll_little
+		margin-right: -7px
+		
+// reverse
+.reverse
+	padding-top: 35px
+	border-bottom: 1px dashed #b7b7b7 
+	margin-bottom: 50px
+	.l
+		padding-right: 0
+	.col-right
+		padding-left: 55px
+		color: #231F20 
+		+box
+	.col-left
+		padding-left: 95px
+		+box
+	.title-f
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: 10px
+			left: -67px
+			+s(bulb)
+
+.form
+	.h3
+		margin-bottom: 45px
+.form__input
+	margin-bottom: 12px
+	width: 346px
+	+box
+
+// .news
+.news
+	.h4
+		margin-bottom: 10px
+		color: #231F20
+		display: inline-block
+		&:hover
+			text-decoration: none
+	p
+		font-size: 13px
+		font-family: "Roboto", sans-serif
+	.col-left, .col-right
+		padding: 0 20px 35px
+		+box
+	.col-left
+		padding-left: 0
+.news__top
+	.h2
+		margin-bottom: 25px
+		display: inline-block
+	
+
+// servise page
+
+.form_left
+	padding-bottom: 20px
+	border-bottom: 1px dashed #b7b7b7 
+	.form__input
+		width: 261px
+		
+.form__top
+	margin-bottom: 10px
+	padding-left: 45px
+	.h3
+		position: relative
+		margin-bottom: 0
+		font-size: 21px
+		&:before
+			position: absolute
+			content: ''
+			top: 6px
+			left: -45px
+			+s(bulb2)
+	p
+		font-size: 14px
+		font-weight: 700 
+
+.content
+	padding: 20px 30px 20px 0
+	.h5
+		padding: 15px 0
+.list
+	li
+		position: relative
+		padding: 0 0 10px 20px
+		font-size: 13px
+		font-family: "Roboto", sans-serif
+		&:before
+			position: absolute
+			content: ''
+			left: 0
+			top: 8px
+			+arr(4, 7, #a9a9a9, r)
+
+.img_mar
+	img
+		margin-left: -15px
+
+.table
+	margin-top: 5px
+	tr
+		td, th
+			padding: 0 20px 
+			line-height: 49px
+			vertical-align: middle
+			border: 1px solid #D9D9D9 
+			&:first-child
+				width: 282px
+				border-left: none
+			&:last-child
+				border-right: none 
+		th
+			text-align: left
+			font-size: 16px
+			font-weight: 400 
+			text-transform: uppercase
+		td
+			font-size: 13px
+			font-family: "Roboto", sans-serif
+.download_2
+	margin-bottom: 55px
+	padding: 28px 40px 0 43px
+	text-decoration: none
+	color: #231F20 
+	display: inline-block
+	.h5
+		position: relative
+		padding-bottom: 5px
+		font-weight: 400 
+		text-transform: uppercase
+		font-family: 'Roboto Condensed', sans-serif
+		&:before
+			position: absolute
+			content: ''
+			top: 5px
+			left: -43px
+			+s(download-pic2)
+	p
+		font-size: 14px
+		font-weight: 700 
+		line-height: 1.2
+
+// products
+
+.products
+	padding: 20px 0 70px
+	border-top: 1px dashed #b7b7b7
+	
+.products__block
+	padding: 15px 0 
+	border-bottom: 1px dashed #b7b7b7
+	&:last-child
+		border: none 
+	+clr
+	.img
+		float: left
+		width: 184px
+		img
+			margin: 0 auto
+	.products__item
+		padding: 8px 5px 10px
+		width: 756px
+		display: inline-block
+		p
+			font-size: 13px
+			font-family: "Roboto", sans-serif
+		&:first-child
+			border-bottom: 2px solid #FC0 
+		.list
+			display: inline-block
+			li
+				margin-right: 60px
+				padding: 0 0 5px 15px
+				vertical-align: top
+				&:first-child
+					span
+						padding-left: 40px
+				span
+					float: right
+					padding-left: 8px
+				&:before
+					top: 5px
+					left: 5px
+				&:first-child
+					padding-right: 8px
+			
+// servise2
+
+.attendance
+	padding: 20px 0 
+	border-top: 1px dashed #b7b7b7
+	border-bottom: 1px dashed #b7b7b7 
+
+.attendance__row
+	font-size: 0
+	
+.attendance__row_bot
+	.attendance__col
+		&:before
+			display: none
+			
+.attendance__col
+	position: relative
+	padding-left: 114px
+	width: 323px
+	height: 98px
+	line-height: 98px
+	font-size: 16px
+	color: #231F20 
+	text-decoration: none
+	vertical-align: top
+	display: inline-block
+	+transition(0.2s)
+	+box
+	&:hover
+		background: #FC0 
+		+transition(0.2s)
+	&:before
+		position: absolute
+		content: ''
+		right: -16.4px
+		bottom: -15.3px
+		+s(col-p)
+	&:last-child
+		&:before
+			display: none
+	i
+		position: absolute
+		top: 50%
+		right: 238px
+		display: inline-block
+	span
+		display: inline-block
+		line-height: 1.2
+		vertical-align: middle
+
+.attendance__col1
+	i
+		margin-top: -25.5px
+		+s(arr3)
+.attendance__col2
+	i
+		margin-top: -22px
+		+s(arr4)
+.attendance__col3
+	i
+		margin-top: -19px
+		+s(arr5)
+.attendance__col4
+	i
+		margin-top: -14px
+		+s(arr6)
+.attendance__col5
+	i
+		margin-top: -14px
+		+s(arr7)
+.attendance__col6
+	i
+		margin-top: -14.5px
+		+s(arr8)
+.attendance__col7
+	i
+		margin-top: -13px
+		+s(arr9)
+.attendance__col8
+	i
+		margin-top: -10px
+		+s(arr10)
+.attendance__col9
+	i
+		margin-top: -12px
+		+s(arr11)
+.attendance__col10
+	i
+		margin-top: -12px
+		+s(arr12)
+.attendance__col11
+	i
+		margin-top: -19.5px
+		+s(arr13)
+.attendance__col12
+	i
+		margin-top: -17px
+		+s(arr14)
+
+// article
+	
+.article
+	padding: 60px 0
+	.h1
+		padding-bottom: 32px
+	.h4
+		padding: 20px 0 15px
+	p
+		padding-bottom: 8px
+		font-size: 13px
