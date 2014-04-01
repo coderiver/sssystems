@@ -17,6 +17,10 @@ body
 	+box
 	+clr
 
+// wrapper_bg
+.wrapper_bg
+	background: url('../img/l-bg.jpg') repeat-y right top
+
 // out
 .out
 	width: 100%
@@ -57,7 +61,7 @@ body
 	font-weight: 700 
 
 .h2_pb
-	padding-bottom: 51px
+	padding-bottom: 34px
 
 // col
 .col-left
@@ -254,3 +258,54 @@ body
 	margin-top: 48px
 	font-size: 11px
 	color: #7E7E7E 
+	
+// popup
+.popup
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	width: 100%
+	z-index: 1000
+	position: fixed
+	background: rgba(0, 0, 0, .4)
+	display: none
+	
+.poput__field
+	position: absolute
+	padding: 30px
+	top: 50%
+	left: 50%
+	margin: -203px 0 0 -206px
+	width: 412px
+	height: 405px
+	color: #000
+	z-index: 1000
+	border: 2px solid #ffcc00
+	background: #fff 
+	+border-radius(10px)
+	+box
+	i
+		position: absolute
+		content: "" 
+		top: 6px
+		right: 6px
+		cursor: pointer
+		+s(fancy_close)
+	.form
+		.title-ads
+			padding-bottom: 15px
+			font-size: 30px
+			text-align: center
+		.btn
+			text-transform: uppercase
+			font-size: 18px
+			
+// fancybox-title 
+.fancybox-title
+	text-align: center
+	
+// js block
+.js-attendance
+	background: #FFF
+	display: none 
