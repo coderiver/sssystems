@@ -34,21 +34,21 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 
 .container { background: url("../img/bg-cont.png"); }
 
-.h1, .h2, .h3, .h4, .title-f { text-transform: uppercase; font-weight: normal; }
+.t1, .t2, .t3, .t4, .title-f { text-transform: uppercase; font-weight: normal; }
 
 .title-f { font-size: 42px; }
 
-.h1 { font-size: 36px; }
+.t1 { font-size: 36px; }
 
-.h2 { font-size: 30px; }
+.t2 { font-size: 30px; }
 
-.h3 { font-size: 22px; }
+.t3 { font-size: 22px; }
 
-.h4 { font-size: 16px; }
+.t4 { font-size: 16px; }
 
-.h5 { font-size: 14px; font-weight: 700; }
+.t5 { font-size: 14px; font-weight: 700; }
 
-.h2_pb { padding-bottom: 34px; }
+.t2_pb { padding-bottom: 34px; }
 
 .col-left { float: left; width: 50%; }
 
@@ -65,7 +65,7 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .input:focus::-webkit-input-placeholder { font-size: 0; }
 .input:focus::placeholder { font-size: 0; }
 
-.btn { padding: 20px 0; width: 100%; text-align: center; font-weight: 700; cursor: pointer; background: #ffcc01; display: inline-block; -webkit-border-radius: 17px; -moz-border-radius: 17px; -ms-border-radius: 17px; -o-border-radius: 17px; border-radius: 17px; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; -webkit-box-shadow: 0 2px 2px #c3c3c3; -moz-box-shadow: 0 2px 2px #c3c3c3; box-shadow: 0 2px 2px #c3c3c3; }
+.btn { padding: 20px 0; width: 100%; text-align: center; font-weight: 700; font-size: 16px; cursor: pointer; font-family: "Roboto Condensed", sans-serif; background: #ffcc01; display: inline-block; -webkit-border-radius: 17px; -moz-border-radius: 17px; -ms-border-radius: 17px; -o-border-radius: 17px; border-radius: 17px; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; -webkit-box-shadow: 0 2px 2px #c3c3c3; -moz-box-shadow: 0 2px 2px #c3c3c3; box-shadow: 0 2px 2px #c3c3c3; }
 .btn:hover { -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; color: #ffcc01; background: #323232; }
 
 .breadcrumbs { margin-bottom: 30px; padding-top: 5px; text-transform: uppercase; font-size: 13px; }
@@ -101,6 +101,8 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .shop a { color: #231f1f; margin: 0 10px 0 18px; text-transform: uppercase; line-height: 22px; text-decoration: none; border-bottom: 1px dotted #231f1f; }
 .shop a:hover { border: none; }
 
+.shop__block { width: 142px; height: 10px; display: inline-block; }
+
 .shop__pic, .shop__update { vertical-align: bottom; cursor: pointer; }
 
 .shop__pic { display: inline-block; background: url('../img/icons-seaeb2001db.png') 0 -1430px no-repeat; width: 22px; height: 27px; }
@@ -124,7 +126,7 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .popup { position: absolute; top: 0; left: 0; bottom: 0; width: 100%; z-index: 1000; position: fixed; background: rgba(0, 0, 0, 0.4); display: none; }
 
 .poput__field { position: absolute; padding: 30px; top: 50%; left: 50%; margin: -203px 0 0 -206px; width: 412px; height: 405px; color: black; z-index: 1000; border: 2px solid #ffcc00; background: white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.poput__field i { position: absolute; content: ""; top: 6px; right: 6px; cursor: pointer; background: url('../img/icons-seaeb2001db.png') 0 -425px no-repeat; width: 30px; height: 30px; }
+.poput__field i { position: absolute; content: ""; top: -20px; right: -16px; cursor: pointer; background: url('../img/icons-seaeb2001db.png') 0 -425px no-repeat; width: 30px; height: 30px; }
 .poput__field .form .title-ads { padding-bottom: 15px; font-size: 30px; text-align: center; }
 .poput__field .form .btn { text-transform: uppercase; font-size: 18px; }
 
@@ -181,12 +183,10 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 
 .services__oll { padding: 20px 0 20px 25px !important; width: 251px; color: white; font-size: 16px !important; text-align: left; text-transform: uppercase; text-decoration: none; font-family: "Roboto Condensed", sans-serif !important; background: #231f20; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .services__oll:hover { color: #ffcc00; background: #323232; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
-.services__oll:hover:before { display: none; }
-.services__oll:hover:after { display: block; }
+.services__oll:hover:before { background: url('../img/icons-seaeb2001db.png') 0 -1366px no-repeat; }
 .services__oll:before { position: absolute; content: ""; top: 50%; right: 26px; margin-top: -9.5px; background: url('../img/icons-seaeb2001db.png') 0 -1337px no-repeat; width: 20px; height: 19px; }
-.services__oll:after { position: absolute; content: ""; top: 50%; right: 26px; margin-top: -10px; display: none; background: url('../img/icons-seaeb2001db.png') 0 -1366px no-repeat; width: 20px; height: 19px; }
 
-.services__oll_mod { position: absolute; right: 0; bottom: 0; }
+.services__oll_mod { position: absolute; right: 0; bottom: 0; z-index: 200; }
 
 .services__oll_little { float: right; padding: 5px 18px 5px 20px !important; width: 156px; color: #231f20; font-size: 13px !important; background: #ffcc00; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
 .services__oll_little i { font-size: 16px; font-style: normal; }
@@ -196,10 +196,10 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 
 .preview { width: 100%; height: 222px; background: #ffcc00; }
 
-.preview__field { font-size: 0; background: url("../img/bg-preview.png") no-repeat -61.5px 0; }
+.preview__field { font-size: 0; background: url("../img/bg-preview.png") no-repeat -62px 0; }
 
 .preview__item { width: 25%; height: 222px; color: #231f20; text-align: center; text-decoration: none; vertical-align: top; display: inline-block; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.preview__item .h3 { text-transform: uppercase; line-height: 1.2; }
+.preview__item .t3 { text-transform: uppercase; line-height: 1.2; }
 
 .preview__pic { position: relative; margin-bottom: 5px; height: 107px; text-align: center; vertical-align: bottom; }
 .preview__pic i { position: absolute; bottom: 0; left: 50%; display: block; }
@@ -215,11 +215,11 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .l { color: white; }
 
 .l-col1 p, .l-col1 a { padding-bottom: 12px; font-family: "Roboto", sans-serif; font-size: 13px; }
-.l-col1 a, .l-col1 .h1 { color: #fecb00; }
+.l-col1 a, .l-col1 .t1 { color: #fecb00; }
 .l-col1 a { text-decoration: none; }
 .l-col1 a:hover { text-decoration: underline; }
-.l-col1 .h1 { margin-bottom: 35px; }
-.l-col1 .h4 { padding: 12px 0; }
+.l-col1 .t1 { margin-bottom: 35px; }
+.l-col1 .t4 { padding: 12px 0; }
 .l-col1 .services__oll { position: relative; margin-top: 55px; color: #231f20; text-decoration: none !important; background: #ffcc00; display: inline-block; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
 .l-col1 .services__oll:hover { color: #ffcc00; background: #323232; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
 .l-col1 .services__oll:before { right: 17px; top: 50%; margin-top: -5px; background: url('../img/icons-seaeb2001db.png') 0 -1758px no-repeat; width: 11px; height: 10px; }
@@ -257,7 +257,7 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .slider_pb { margin-bottom: 62px; }
 
 .slider__top { padding: 22px 0 22px 15px; }
-.slider__top .h1 { color: white; display: inline-block; }
+.slider__top .t1 { color: white; display: inline-block; }
 .slider__top .services__oll_little { margin-right: -7px; }
 
 .reverse { padding-top: 35px; border-bottom: 1px dashed #b7b7b7; margin-bottom: 50px; }
@@ -267,30 +267,33 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .reverse .title-f { position: relative; }
 .reverse .title-f:before { position: absolute; content: ""; top: 10px; left: -67px; background: url('../img/icons-seaeb2001db.png') 0 -1128px no-repeat; width: 35px; height: 52px; }
 
-.form .h3 { margin-bottom: 45px; }
+.form { position: relative; }
+.form .t3 { margin-bottom: 45px; }
+.form label { font-size: 0; }
+.form .error:focus { border: 1px solid red; }
 
 .form__input { margin-bottom: 12px; width: 346px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 .form_pt { padding-top: 45px; }
 
-.news .h4 { margin-bottom: 10px; color: #231f20; display: inline-block; }
-.news .h4:hover { text-decoration: none; }
+.news .t4 { margin-bottom: 10px; color: #231f20; display: inline-block; }
+.news .t4:hover { text-decoration: none; }
 .news p { font-size: 13px; font-family: "Roboto", sans-serif; }
 .news .col-left, .news .col-right { padding: 0 20px 35px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .news .col-left { padding-left: 0; }
 
-.news__top .h2 { margin-bottom: 25px; display: inline-block; }
+.news__top .t2 { margin-bottom: 25px; display: inline-block; }
 
 .form_left { padding-bottom: 20px; border-bottom: 1px dashed #b7b7b7; }
 .form_left .form__input { width: 261px; }
 
 .form__top { margin-bottom: 10px; padding-left: 45px; }
-.form__top .h3 { position: relative; margin-bottom: 0; font-size: 21px; }
-.form__top .h3:before { position: absolute; content: ""; top: 6px; left: -45px; background: url('../img/icons-seaeb2001db.png') 0 -1257px no-repeat; width: 24px; height: 36px; }
+.form__top .t3 { position: relative; margin-bottom: 0; font-size: 21px; }
+.form__top .t3:before { position: absolute; content: ""; top: 6px; left: -45px; background: url('../img/icons-seaeb2001db.png') 0 -1257px no-repeat; width: 24px; height: 36px; }
 .form__top p { font-size: 14px; font-weight: 700; }
 
 .content { padding: 20px 30px 20px 0; }
-.content .h5 { padding: 15px 0; }
+.content .t5 { padding: 15px 0; }
 
 .list li { position: relative; padding: 0 0 10px 20px; font-size: 13px; font-family: "Roboto", sans-serif; }
 .list li:before { position: absolute; content: ""; left: 0; top: 8px; width: 0px; height: 0px; border-style: solid; border-width: 3.5px 0 3.5px 4px; border-color: transparent transparent transparent darkgrey; }
@@ -306,8 +309,8 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .table tr td { font-size: 13px; font-family: "Roboto", sans-serif; }
 
 .download_2 { margin-bottom: 55px; padding: 28px 40px 0 43px; text-decoration: none; color: #231f20; display: inline-block; }
-.download_2 .h5 { position: relative; padding-bottom: 5px; font-weight: 400; text-transform: uppercase; font-family: "Roboto Condensed", sans-serif; }
-.download_2 .h5:before { position: absolute; content: ""; top: 5px; left: -43px; background: url('../img/icons-seaeb2001db.png') 0 -1303px no-repeat; width: 33px; height: 24px; }
+.download_2 .t5 { position: relative; padding-bottom: 5px; font-weight: 400; text-transform: uppercase; font-family: "Roboto Condensed", sans-serif; }
+.download_2 .t5:before { position: absolute; content: ""; top: 5px; left: -43px; background: url('../img/icons-seaeb2001db.png') 0 -1303px no-repeat; width: 33px; height: 24px; }
 .download_2 p { font-size: 14px; font-weight: 700; line-height: 1.2; }
 
 .products { padding: 20px 0 70px; border-top: 1px dashed #b7b7b7; }
@@ -365,6 +368,14 @@ body { color: #231f1f; line-height: 1.4; font-family: "Roboto Condensed", sans-s
 .attendance__col12 i { margin-top: -17px; background: url('../img/icons-seaeb2001db.png') 0 -1053px no-repeat; width: 34px; height: 30px; }
 
 .article { padding: 60px 0; }
-.article .h1 { padding-bottom: 32px; }
-.article .h4 { padding: 20px 0 15px; }
+.article .t1 { padding-bottom: 32px; }
+.article .t4 { padding: 20px 0 15px; }
 .article p { padding-bottom: 8px; font-size: 13px; }
+
+.ssss { position: relative; overflow: visible !important; }
+
+.center { position: absolute; right: 50%; top: -66px; margin-right: -440px; z-index: 3000; }
+.center a { display: block; color: #231f1f; margin: 0 10px 0 18px; text-transform: uppercase; line-height: 22px; text-decoration: none; border-bottom: 1px dotted #231f1f; }
+.center a:hover { border: none; }
+
+.cycle-pager-active { display: none !important; }

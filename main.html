@@ -14,12 +14,13 @@
 	<script src="js/cycle.js"></script>
 	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.validate.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  out-->
-<div class="out">
+<div class="out out_bg">
 
 	<!-- BEGIN .header -->
 	<header class="header">
@@ -43,7 +44,7 @@
 				<a href="#" class="logo"></a>
 				<div class="shop">
 					<span class="shop__pic"></span>
-					<a class="js-shop" href="#">Торговый центр</a>
+					<div class="shop__block"></div>
 					<span class="shop__update"></span>
 				</div>
 			</div>
@@ -53,86 +54,92 @@
 
 	<!-- BEGIN .wrapper -->
 	<div class="wrapper ">
-		<div class="services">
-			<img class="services__pic" src="img/house.png" alt="ing">
-			<a href="#" class="services__item services__item_1">
-				Интернет и телефония
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_2">
-				Эфирное телевидение
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_3">
-				Пожарная сигнализация
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_4">
-				Спутниковое тв
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_5">
-				Видеонаблюдение
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_6">
-				Домофония
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_7">
-				Охранная сигнализация
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_8">
-				Ворота и шлагбаумы
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__item services__item_9">
-				Охрана периметра
-				<span class="services__in">&raquo;</span>
-			</a>
-			<a href="#" class="services__oll services__oll_mod">все виды работ</a>
-				
-			<div class="services services_mod js-services">
-				<img class="services__pic" src="http://lorempixel.com/600/400" alt="ing">
-				<div class="services__item services__item_1">
+		<div class="cycle-slideshow ssss" 
+	    data-cycle-fx="scrollHorz"
+	    data-cycle-timeout="0"
+	    data-cycle-pager="#per-slide-template"
+	    data-cycle-slides=".cycle__item"
+	    >
+	    <div class="services cycle__item" data-cycle-pager-template="<a href=#>загородный дом</a>">
+				<img class="services__pic" src="img/house.png" alt="ing">
+				<a href="#" class="services__item services__item_1">
 					Интернет и телефония
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_2">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_2">
 					Эфирное телевидение
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_3">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_3">
 					Пожарная сигнализация
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_4">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_4">
 					Спутниковое тв
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_5">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_5">
 					Видеонаблюдение
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_6">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_6">
 					Домофония
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_7">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_7">
 					Охранная сигнализация
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_8">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_8">
 					Ворота и шлагбаумы
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<div class="services__item services__item_9">
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_9">
 					Охрана периметра
-					<a href="#" class="services__in">&raquo;</a>
-				</div>
-				<a href="#" class="services__oll services__oll_mod">все виды работ</a>
+					<span class="services__in">&raquo;</span>
+				</a>
 			</div>
+	    <div class="services cycle__item" data-cycle-pager-template="<a href=#>Торговый центр</a>">
+				<img class="services__pic" src="img/house.png" alt="ing">
+				<a href="#" class="services__item services__item_1">
+					Интернет и телефония
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_2">
+					Эфирное телевидение
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_3">
+					Пожарная сигнализация
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_4">
+					Спутниковое тв
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_5">
+					Видеонаблюдение
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_6">
+					Домофония
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_7">
+					Охранная сигнализация
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_8">
+					Ворота и шлагбаумы
+					<span class="services__in">&raquo;</span>
+				</a>
+				<a href="#" class="services__item services__item_9">
+					Охрана периметра
+					<span class="services__in">&raquo;</span>
+				</a>
+			</div>
+			<div id="per-slide-template" class="center external"></div>
+			<a href="#" class="services__oll services__oll_mod">все виды работ</a>
 		</div>
 
 	</div>
@@ -142,19 +149,19 @@
 		<div class="preview__field wrapper">
 			<div class="preview__item">
 				<div class="preview__pic preview__pic_1"><i></i></div>
-				<div class="h3">Низкая стоимость<br>оборудования</div>
+				<div class="t3">Низкая стоимость<br>оборудования</div>
 			</div>
 			<div class="preview__item">
 				<div class="preview__pic preview__pic_2"><i></i></div>
-				<div class="h3">Большой<br>опыт</div>
+				<div class="t3">Большой<br>опыт</div>
 			</div>
 			<div class="preview__item">
 				<div class="preview__pic preview__pic_3"><i></i></div>
-				<div class="h3">Работа по всей<br>России и СНГ</div>
+				<div class="t3">Работа по всей<br>России и СНГ</div>
 			</div>
 			<div class="preview__item">
 				<div class="preview__pic preview__pic_4"><i></i></div>
-				<div class="h3">посещениЕ<br>выполненных<br>объектов</div>
+				<div class="t3">посещениЕ<br>выполненных<br>объектов</div>
 			</div>
 		</div>
 	</div>
@@ -171,7 +178,7 @@
 					<a href="#" class="download">
 						<div class="download__block">
 							<div class="download__pic"></div>
-							<div class="h3">Скачайте договор</div>
+							<div class="t3">Скачайте договор</div>
 						</div>
 						<p>Убедитесь в том, что наши условия самые лучшие!</p>
 					</a>
@@ -182,11 +189,11 @@
 				</div>
 
 				<div class="l-col1">
-					<h3 class="h1">Лучшая защита для вашего дома</h3>
+					<h3 class="t1">Лучшая защита для вашего дома</h3>
 					<p>
 						Сегодня обеспечение безопасности материальной и интеллектуальной собственности невозможно представить без целого комплекса технических средств. Ведь правильно спроектированная и настроенная система безопасности поможет защитить объект (квартиру, коттедж, офис) и от действий злоумышленников, и от техногенных факторов, а значит - сократить до минимума связанные с этим убытки. К тому же, только так можно исключить влияние человеческого фактора – невнимательности, забывчивости, неэтичного поведения отдельных сотрудников служб безопасности.
 					</p>
-					<h3 class="h4">Состав систем безопасности</h3>
+					<h3 class="t4">Состав систем безопасности</h3>
 					<p>
 						Комплекс средств безопасности, реализованных в вашем доме или офисе, а также степень их интеграции зависит от специфики объекта. 	Например, для охраны квартиры будет достаточно относительно простой системы видеонаблюдения и системы охранно-пожарной сигнализации, в которой реализована автоматическая связь с пультовой охраной и пожарным отделением. 
 					</p>
@@ -233,52 +240,52 @@
 		<!-- BEGIN .slider  -->
 		<div class="slider">
 			<div class="slider__top wrapper">
-				<h1 class="h1">Выполненные объекты</h1>
+				<h1 class="t1">Выполненные объекты</h1>
 				<a class="services__oll services__oll_little" href="#"><i>&raquo;</i> Посмотреть все...</a>
 			</div>
 			<div class="cycle-slideshow" 
 			    data-cycle-fx="carousel"
 			    data-cycle-timeout="1500"
-				data-cycle-pager-template="<button></button>"
-				data-cycle-prev=".cycle__nav_prev"
-				data-cycle-next=".cycle__nav_next"
-				data-cycle-slides=".cycle__item"
-				data-cycle-pause-on-hover="true"
+					data-cycle-pager-template="<button></button>"
+					data-cycle-prev=".cycle__nav_prev"
+					data-cycle-next=".cycle__nav_next"
+					data-cycle-slides=".cycle__item"
+					data-cycle-pause-on-hover="true"
 			    data-cycle-carousel-visible="4"
 			    >
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
@@ -300,12 +307,14 @@
 			<div class="col-right">
 
 				<h3 class="title-f">Вызовите инженера</h3>
-				<h3 class="h3">Чтобы расчитать стоимость работ</h3>
+				<h3 class="t3">Чтобы расчитать стоимость работ</h3>
 				<div class="form form_pt">
-					<div class="form__input"><input class="input" type="text" placeholder="Ваше имя"></div>
-					<div class="form__input"><input class="input" type="text" placeholder="Номер телефона"></div>
-					<div class="form__input"><input class="input" type="text" placeholder="e-mail адрес"></div>
-					<div class="form__input"><buttom class="btn">Вызвать инженера</buttom></div>
+					<form class="js_loginform">
+						<div class="form__input"><input class="input" type="text" name="name" placeholder="Ваше имя"></div>
+						<div class="form__input"><input class="input" type="text" name="phone" placeholder="Номер телефона" onkeyup="return js_numbers(this);"></div>
+						<div class="form__input"><input class="input" type="text" name="mail" placeholder="e-mail адрес" onkeyup="return js_mail(this);"></div>
+						<div class="form__input"><input type="submit" name="enter" value="Вызвать инженера" class="btn"></input></div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -315,15 +324,15 @@
 	<!-- BEGIN .news -->
 	<div class="news wrapper">
 		<div class="news__top">
-			<h2 class="h2">Последние новости</h2>
+			<h2 class="t2">Последние новости</h2>
 			<a class="services__oll services__oll_little" href="#"><i>&raquo;</i> Посмотреть все...</a>
 		</div>
 		<div class="col-left">
-			<a href="#" class="h4">SS System Получили европейскую награду Frost <br>Sullivan 2013</a>
+			<a href="#" class="t4">SS System Получили европейскую награду Frost <br>Sullivan 2013</a>
 			<p>По результатам анализа рынка систем автоматизации зданий консалтинговая компания Frost & Sullivan в очередной раз присудила фирме SS Systems Европейскую награду Frost & Sullivan 2013 года за лидерство в развитии.</p>
 		</div>
 		<div class="col-right">
-			<a href="#" class="h4">Фотоотчет о выставке Aqua-Term Moscow 2013 г.</a>
+			<a href="#" class="t4">Фотоотчет о выставке Aqua-Term Moscow 2013 г.</a>
 			<p>Наша компания совместно с итальянскими представителями принимала участие на выставке Aqua-Term 2013 г., который проходил на прошлой неделе с 8 по 13 февраля в МВЦ «Крокус Экспо». Представляем вашему вниманию фотоотчет с выставки.</p>
 		</div>
 	</div>
@@ -358,9 +367,11 @@
 		<div class="poput__field js-popup">
 			<div class="form">
 				<h3 class="title-ads">Записаться</h3>
-				<div class="form__input"><input class="input" type="text" placeholder="Ваше имя"></div>
-				<div class="form__input"><input class="input" type="text" placeholder="Номер телефона"></div>
-				<div class="form__input"><buttom class="btn">Отправить</buttom></div>
+				<form class="js_loginform">
+					<div class="form__input"><input class="input" type="text" name="name" placeholder="Ваше имя"></div>
+					<div class="form__input"><input class="input" type="text" name="phone" placeholder="Номер телефона" onkeyup="return js_numbers(this);"></div>
+					<div class="form__input"><input type="submit" name="enter" value="Отправить" class="btn"></input></div>
+				</form>
 				<p>Оставьте, пожалуйста, ваше имя и телефон в форме заявки и наш менеджер свяжется с вами в течение часа.</p>
 				<i class="js-popup-close"></i>
 			</div>

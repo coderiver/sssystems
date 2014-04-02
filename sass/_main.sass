@@ -127,10 +127,8 @@
 		color: #FC0 
 		background: #323232 
 		+transition(0.2s)
-		&:before
-			display: none
-		&:after
-			display: block
+		&:before 
+			+si(pic-oll1)
 	&:before
 		position: absolute
 		content: ''
@@ -138,19 +136,12 @@
 		right: 26px
 		margin-top: -9.5px
 		+s(pic-oll)
-	&:after
-		position: absolute
-		content: ''
-		top: 50%
-		right: 26px
-		margin-top: -10px
-		display: none
-		+s(pic-oll1)
 
 .services__oll_mod
 	position: absolute
 	right: 0
 	bottom: 0
+	z-index: 200
 	
 .services__oll_little
 	float: right
@@ -179,7 +170,7 @@
 	background: #FC0 
 .preview__field
 	font-size: 0
-	background: url('../img/bg-preview.png') no-repeat -61.5px 0
+	background: url('../img/bg-preview.png') no-repeat -62px 0
 
 .preview__item
 	width: 25%
@@ -191,7 +182,7 @@
 	display: inline-block
 	+transition(0.2s)
 	+box
-	.h3 
+	.t3 
 		text-transform: uppercase
 		line-height: 1.2
 	// &:hover
@@ -244,17 +235,17 @@
 		padding-bottom: 12px
 		font-family: "Roboto", sans-serif
 		font-size: 13px
-	a, .h1
+	a, .t1
 		color: #FECB00 
 	a
 		text-decoration: none
 		&:hover
 			text-decoration: underline
 
-	.h1
+	.t1
 		margin-bottom: 35px
 		
-	.h4
+	.t4
 		padding: 12px 0
 	.services__oll
 		position: relative
@@ -414,7 +405,7 @@
 
 .slider__top
 	padding: 22px 0 22px 15px
-	.h1
+	.t1
 		color: #FFF 
 		display: inline-block
 	.services__oll_little
@@ -444,8 +435,14 @@
 			+s(bulb)
 
 .form
-	.h3
+	position: relative
+	.t3
 		margin-bottom: 45px
+	label
+		font-size: 0
+	.error
+		&:focus
+			border: 1px solid red 
 .form__input
 	margin-bottom: 12px
 	width: 346px
@@ -456,7 +453,7 @@
 
 // .news
 .news
-	.h4
+	.t4
 		margin-bottom: 10px
 		color: #231F20
 		display: inline-block
@@ -471,7 +468,7 @@
 	.col-left
 		padding-left: 0
 .news__top
-	.h2
+	.t2
 		margin-bottom: 25px
 		display: inline-block
 	
@@ -487,7 +484,7 @@
 .form__top
 	margin-bottom: 10px
 	padding-left: 45px
-	.h3
+	.t3
 		position: relative
 		margin-bottom: 0
 		font-size: 21px
@@ -503,7 +500,7 @@
 
 .content
 	padding: 20px 30px 20px 0
-	.h5
+	.t5
 		padding: 15px 0
 .list
 	li
@@ -550,7 +547,7 @@
 	text-decoration: none
 	color: #231F20 
 	display: inline-block
-	.h5
+	.t5
 		position: relative
 		padding-bottom: 5px
 		font-weight: 400 
@@ -714,10 +711,32 @@
 	
 .article
 	padding: 60px 0
-	.h1
+	.t1
 		padding-bottom: 32px
-	.h4
+	.t4
 		padding: 20px 0 15px
 	p
 		padding-bottom: 8px
 		font-size: 13px
+
+.ssss
+	position: relative
+	overflow: visible !important 
+.center
+	position: absolute
+	right: 50%
+	top: -66px
+	margin-right: -440px
+	z-index: 3000
+	a
+		display: block
+		color: #231F1F 
+		margin: 0 10px 0 18px 
+		text-transform: uppercase
+		line-height: 22px
+		text-decoration: none
+		border-bottom: 1px dotted #231f1f 
+		&:hover
+			border: none 
+.cycle-pager-active
+	display: none !important 

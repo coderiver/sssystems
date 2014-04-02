@@ -14,6 +14,7 @@
 	<script src="js/cycle.js"></script>
 	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.validate.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -34,7 +35,7 @@
 				</ul>
 				<div class="phone">
 					<div class="phone__number">+7 (495) 774 72 66</div>
-					<div class="phone__callback">обратный звонок</div>
+					<div class="phone__callback js-btn">обратный звонок</div>
 				</div>
 			</div>
 		</div>
@@ -53,7 +54,7 @@
 			<a href="#">Услуги<span>&raquo;</span></a>
 			<span>Проектирование и монтаж систем видеонаблюдения</span>
 		</div>
-		<h1 class="h2 h2_pb">Проектирование и монтаж систем видеонаблюдения</h1>
+		<h3 class="t2 t2_pb">Проектирование и монтаж систем видеонаблюдения</h3>
 	</div>
 	<!-- END .wrapper -->
 
@@ -65,16 +66,18 @@
 			<div class="l-col2 l-col2_mod">
 				<div class="form form_left">
 					<div class="form__top">
-						<h3 class="h3">Вызовите инженера</h3>
+						<h3 class="t3">Вызовите инженера</h3>
 						<p>Чтобы расчитать стоимость работ</p>
 					</div>
-					<div class="form__input"><input class="input" type="text" placeholder="Ваше имя"></div>
-					<div class="form__input"><input class="input" type="text" placeholder="Номер телефона"></div>
-					<div class="form__input"><input class="input" type="text" placeholder="e-mail адрес"></div>
-					<div class="form__input"><buttom class="btn">Вызвать инженера</buttom></div>
+					<form class="js_loginform">
+						<div class="form__input"><input class="input" type="text" name="name" placeholder="Ваше имя"></div>
+						<div class="form__input"><input class="input" type="text" name="phone" placeholder="Номер телефона" onkeyup="return js_numbers2(this);"></div>
+						<div class="form__input"><input class="input" type="text" name="mail" placeholder="e-mail адрес" onkeyup="return js_mail2(this);"></div>
+						<div class="form__input"><input type="submit" name="enter" value="Вызвать инженера" class="btn"></input></div>
+					</form>
 				</div>
 				<a href="#" class="download_2">
-					<div class="h5">Скачайте договор</div>
+					<div class="t5">Скачайте договор</div>
 					<p>Убедитесь в том, что наши условия самые лучшие!</p>
 				</a>
 				<a href="#" class="discount">
@@ -86,13 +89,13 @@
 				<div class="img img_mar"><img src="img/cont-pic.png" alt="img"></div>
 				<div class="content">
 					<p>Сегодня обеспечение безопасности материальной и интеллектуальной собственности невозможно представить без целого комплекса технических средств. Ведь правильно спроектированная и настроенная система безопасности поможет защитить объект (квартиру, коттедж, офис) и от действий злоумышленников, и от техногенных факторов, а значит - сократить до минимума связанные с этим убытки. К тому же, только так можно исключить влияние человеческого фактора – невнимательности, забывчивости, неэтичного поведения отдельных сотрудников служб безопасности.</p>
-					<h2 class="h4">Состав систем безопасности</h2>
+					<h2 class="t4">Состав систем безопасности</h2>
 					<ul class="list">
 						<li>Комплекс средств безопасности, реализованных в вашем доме или офисе, а также степень их интеграции зависит от специфики объекта. </li>
 						<li>Например, для охраны квартиры будет достаточно относительно простой системы видеонаблюдения и системы охранно-пожарной сигнализации, в которой реализована автоматическая связь с пультовой охраной и пожарным отделением. </li>
 						<li>Офисному зданию необходима комплексная система безопасности с интеграцией всех подсистем, автоматической системой пожаротушения и гибкой системой мониторинга и уведомления. </li>
 					</ul>
-					<h3 class="h5">SS System Получили европейскую награду Frost & <br>Sullivan 2013</h3>
+					<h3 class="t5">SS System Получили европейскую награду Frost & <br>Sullivan 2013</h3>
 					<p>По результатам анализа рынка систем автоматизации зданий консалтинговая компания Frost & Sullivan в очередной раз присудила фирме SS Systems Европейскую награду Frost & Sullivan 2013 года за лидерство в развитии.</p>
 					<table class="table">
 						<tr>
@@ -123,14 +126,14 @@
 	<div class="products">
 		<div class="wrapper">
 			<div class="news__top">
-				<h2 class="h2">Подходящее оборудование</h2>
+				<h2 class="t2">Подходящее оборудование</h2>
 				<a class="services__oll services__oll_little" href="#"><i>&raquo;</i> Посмотреть все...</a>
 			</div>
 			<div class="products__block">
 				<div class="img"><img src="img/arr1.png" alt="img"></div>
 				<div class="products__description">
 					<div class="products__item">
-						<h4 class="h4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
+						<h4 class="t4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
 						<p>Бюджетная антивандальная камера с ИК-подсветкой.</p>
 					</div>
 					<div class="products__item">
@@ -149,7 +152,7 @@
 				<div class="img"><img src="img/arr2.png" alt="img"></div>
 				<div class="products__description">
 					<div class="products__item">
-						<h4 class="h4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
+						<h4 class="t4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
 						<p>Бюджетная антивандальная камера с ИК-подсветкой.</p>
 					</div>
 					<div class="products__item">
@@ -168,7 +171,7 @@
 				<div class="img"><img src="img/arr1.png" alt="img"></div>
 				<div class="products__description">
 					<div class="products__item">
-						<h4 class="h4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
+						<h4 class="t4">Аналоговая камера видеонаблюдения RVi-125C (2.8-12 мм) (антивандальная)</h4>
 						<p>Бюджетная антивандальная камера с ИК-подсветкой.</p>
 					</div>
 					<div class="products__item">
@@ -193,7 +196,7 @@
 		<!-- BEGIN .slider  -->
 		<div class="slider slider_pb">
 			<div class="slider__top wrapper">
-				<h1 class="h1">Выполненные объекты</h1>
+				<h3 class="t1">Выполненные объекты</h3>
 				<a class="services__oll services__oll_little" href="#"><i>&raquo;</i> Посмотреть все...</a>
 			</div>
 			<div class="cycle-slideshow" 
@@ -208,37 +211,37 @@
 			    >
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/10_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
 			    <a class="cycle__item fancybox fancybox-effects" data-fancybox-group="gallery" href="./img/11_b.jpg" title="<h3>Комплексная охрана дома</h3>Видеонаблюдение, сигнализация, защита от сглаза..."><img src="./img/photo2.png" />
 			    	<div class="cycle__block">
-			    		<h4 class="h4">Комплексная охрана дома</h4>
+			    		<h4 class="t4">Комплексная охрана дома</h4>
 			    		<p>Видеонаблюдение, сигнализация,<br> защита от сглаза...</p>
 			    	</div>
 			    </a>
@@ -274,6 +277,23 @@
 
 </div>
 <!-- END out-->
+
+<!-- BEGIN .popup -->
+	<div class="popup popup_form js-popup-field">
+		<div class="poput__field js-popup">
+			<div class="form">
+				<h3 class="title-ads">Записаться</h3>
+				<form class="js_loginform">
+					<div class="form__input"><input class="input" type="text" name="name" placeholder="Ваше имя"></div>
+					<div class="form__input"><input class="input" type="text" name="phone" placeholder="Номер телефона" onkeyup="return js_numbers(this);"></div>
+					<div class="form__input"><input type="submit" name="enter" value="Отправить" class="btn"></input></div>
+				</form>
+				<p>Оставьте, пожалуйста, ваше имя и телефон в форме заявки и наш менеджер свяжется с вами в течение часа.</p>
+				<i class="js-popup-close"></i>
+			</div>
+		</div>
+	</div>
+	<!-- END .popup -->
 
 </body>
 </html>

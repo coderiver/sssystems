@@ -37,30 +37,30 @@ body
 	background: url('../img/bg-cont.png') 
 
 // h
-.h1, .h2, .h3, .h4, .title-f
+.t1, .t2, .t3, .t4, .title-f
 	text-transform: uppercase
 	font-weight: normal
 
 .title-f
 	font-size: 42px
 
-.h1
+.t1
 	font-size: 36px
 
-.h2
+.t2
 	font-size: 30px
 
-.h3 
+.t3 
 	font-size: 22px
 
-.h4
+.t4
 	font-size: 16px
 
-.h5
+.t5
 	font-size: 14px
 	font-weight: 700 
 
-.h2_pb
+.t2_pb
 	padding-bottom: 34px
 
 // col
@@ -97,7 +97,9 @@ body
 	width: 100% 
 	text-align: center
 	font-weight: 700 
+	font-size: 16px
 	cursor: pointer
+	font-family: 'Roboto Condensed', sans-serif
 	background: #FFCC01 
 	display: inline-block
 	+border-radius(17px)
@@ -213,7 +215,12 @@ body
 		border-bottom: 1px dotted #231f1f 
 		&:hover
 			border: none 
-			
+
+.shop__block
+	width: 142px
+	height: 10px
+	display: inline-block
+
 .shop__pic, .shop__update
 	vertical-align: bottom
 	cursor: pointer
@@ -288,8 +295,8 @@ body
 	i
 		position: absolute
 		content: "" 
-		top: 6px
-		right: 6px
+		top: -20px
+		right: -16px
 		cursor: pointer
 		+s(fancy_close)
 	.form
