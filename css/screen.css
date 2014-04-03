@@ -222,14 +222,15 @@ h1, h2 { font-weight: normal; text-transform: uppercase; }
 
 .preview__pic_4 i { margin-left: -26px; background: url('../img/icons-seaeb2001db.png') 0 -465px no-repeat; width: 59px; height: 52px; }
 
+.container h1 { text-transform: uppercase; font-weight: normal; line-height: 1; font-size: 36px; margin-bottom: 35px; }
+
 .l { color: white; }
 
 .l-col1 p, .l-col1 a { font-family: "Roboto", sans-serif; font-size: 13px; }
 .l-col1 p { padding: 12px 0; }
-.l-col1 a, .l-col1 .t1 { color: #fecb00; }
+.l-col1 a, .l-col1 h1 { color: #fecb00; }
 .l-col1 a { text-decoration: none; }
 .l-col1 a:hover { text-decoration: underline; }
-.l-col1 .t1 { margin-bottom: 35px; }
 .l-col1 .t4 { padding: 12px 0; }
 .l-col1 .services__oll { position: relative; margin-top: 55px; color: #231f20; text-decoration: none !important; background: #ffcc00; display: inline-block; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
 .l-col1 .services__oll:hover { color: #ffcc00; background: #323232; -webkit-transition: 0.2s; -moz-transition: 0.2s; -o-transition: 0.2s; transition: 0.2s; }
@@ -380,7 +381,7 @@ h1, h2 { font-weight: normal; text-transform: uppercase; }
 .attendance__col12 i { margin-top: -17px; background: url('../img/icons-seaeb2001db.png') 0 -1053px no-repeat; width: 34px; height: 30px; }
 
 .article { padding: 60px 0; }
-.article .t1 { padding-bottom: 32px; }
+.article h1 { padding-bottom: 32px; font-size: 36px; }
 .article .t4 { padding: 20px 0 15px; }
 .article p { padding: 8px 0; font-size: 13px; }
 
