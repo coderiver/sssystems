@@ -222,7 +222,8 @@ h1, h2 { font-weight: normal; text-transform: uppercase; }
 
 .preview__pic_4 i { margin-left: -26px; background: url('../img/icons-seaeb2001db.png') 0 -465px no-repeat; width: 59px; height: 52px; }
 
-.container h1 { text-transform: uppercase; font-weight: normal; line-height: 1; font-size: 36px; margin-bottom: 35px; }
+.container h1 { text-transform: uppercase; font-weight: normal; line-height: 1; font-size: 36px; }
+.container h1 .l-col1 h1 { margin-bottom: 35px; }
 
 .l { color: white; }
 
@@ -306,8 +307,8 @@ h1, h2 { font-weight: normal; text-transform: uppercase; }
 
 .content { padding: 20px 30px 20px 0; }
 
-.list li { position: relative; padding: 0 0 10px 20px; font-size: 13px; font-family: "Roboto", sans-serif; }
-.list li:before { position: absolute; content: ""; left: 0; top: 8px; width: 0px; height: 0px; border-style: solid; border-width: 3.5px 0 3.5px 4px; border-color: transparent transparent transparent darkgrey; }
+.list li, .content ul li { position: relative; padding: 0 0 10px 20px; font-size: 13px; font-family: "Roboto", sans-serif; }
+.list li:before, .content ul li:before { position: absolute; content: ""; left: 0; top: 8px; width: 0px; height: 0px; border-style: solid; border-width: 3.5px 0 3.5px 4px; border-color: transparent transparent transparent darkgrey; }
 
 .img_mar { margin-top: 22px; }
 .img_mar img { margin-left: -15px; }
@@ -384,6 +385,14 @@ h1, h2 { font-weight: normal; text-transform: uppercase; }
 .article h1 { padding-bottom: 32px; font-size: 36px; }
 .article .t4 { padding: 20px 0 15px; }
 .article p { padding: 8px 0; font-size: 13px; }
+
+.text { font-size: 13px; }
+.text h3 { margin: 0.5em 0 1em 0; font-size: 14px; font-weight: bold; text-transform: uppercase; }
+.text h4 { font-size: 13px; margin-bottom: 1em; }
+.text h5, .text h6 { font-size: 13px; font-weight: bold; margin-bottom: 1em; font-weight: normal; }
+.text ul, .text ol { margin: 1em 2em; }
+.text ul { list-style-type: disc; }
+.text ol { list-style-type: decimal; }
 
 .ssss { position: relative; overflow: visible !important; }
 
